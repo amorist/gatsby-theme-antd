@@ -49,12 +49,12 @@ function getPostOrder(post, siteMetadata, type) {
   const categories = siteMetadata[type] || [];
   if (type === 'examples') {
     const categoryOrder =
-      categories.findIndex(item => item.slug === slug.split('/')[3]) + 1;
+      categories.findIndex((item) => item.slug === slug.split('/')[3]) + 1;
     result = (order || 0) + categoryOrder * 100;
     return result;
   }
   let categoryOrder = 0;
-  categories.forEach(item => {
+  categories.forEach((item) => {
     if (slug.includes(item.slug)) {
       categoryOrder += item.order * (0.1 ** item.slug.split('/').length - 2);
     }
@@ -74,7 +74,7 @@ exports.onPreBootstrap = ({ store, reporter }) => {
     path.join(program.directory, 'site', 'images'),
   ];
 
-  dirs.forEach(dir => {
+  dirs.forEach((dir) => {
     if (!fs.existsSync(dir)) {
       reporter.log(`creating the ${dir} directory`);
       mkdirp.sync(dir);
@@ -190,10 +190,10 @@ exports.createPages = async ({ actions, graphql, reporter, store }) => {
     allFile,
   } = result.data;
 
-  const posts = allMarkdownRemark.edges.filter(item => !!item);
+  const posts = allMarkdownRemark.edges.filter((item) => !!item);
   const allDemos = allFile.nodes
-    .filter(node => /demo\/(.*)\.[t|j]sx?$/.test(node.relativePath))
-    .map(item => {
+    .filter((node) => /demo\/(.*)\.[t|j]sx?$/.test(node.relativePath))
+    .map((item) => {
       let meta;
       try {
         meta = JSON.parse(
@@ -224,8 +224,8 @@ exports.createPages = async ({ actions, graphql, reporter, store }) => {
       slug.startsWith(`/zh/examples`) || slug.startsWith(`/en/examples`);
     if (isGalleryPage) {
       // 找到所有的演示
-      context.allDemos = allDemos.map(demo => {
-        const postsOfDemo = posts.filter(post => {
+      context.allDemos = allDemos.map((demo) => {
+        const postsOfDemo = posts.filter((post) => {
           // 标记演示所属的文章用于分类
           const postSlug = post.node.fields.slug;
           if (
@@ -243,7 +243,7 @@ exports.createPages = async ({ actions, graphql, reporter, store }) => {
         });
 
         const postFrontmatter = {};
-        postsOfDemo.forEach(post => {
+        postsOfDemo.forEach((post) => {
           if (post.node.fields.slug.startsWith(`/zh/examples`)) {
             postFrontmatter.zh = {
               ...post.node.frontmatter,
@@ -265,22 +265,22 @@ exports.createPages = async ({ actions, graphql, reporter, store }) => {
       } else if (/\/examples\/.*\/design$/.test(slug)) {
         exampleRootSlug = exampleRootSlug.replace(/\/design$/, '');
       }
-      const design = posts.find(post => {
+      const design = posts.find((post) => {
         const { slug: postSlug } = post.node.fields;
         return postSlug === `${exampleRootSlug}/design`;
       });
-      const API = posts.find(post => {
+      const API = posts.find((post) => {
         const { slug: postSlug } = post.node.fields;
         return postSlug === `${exampleRootSlug}/API`;
       });
       const examples = allDemos
-        .filter(item =>
+        .filter((item) =>
           `${exampleRootSlug}/demo`.endsWith(
             slash(path.join('examples', path.dirname(item.relativePath))),
           ),
         )
         .sort((a, b) => a.order - b.order)
-        .map(item => {
+        .map((item) => {
           const source = fs.readFileSync(item.absolutePath, 'utf8');
           const { code } = transform(source, {
             filename: item.absolutePath,
@@ -304,8 +304,8 @@ exports.createPages = async ({ actions, graphql, reporter, store }) => {
     // 修复修改 example 代码不及时生效的问题
     const { pages } = store.getState();
     const oldPage = Array.from(pages)
-      .map(item => item[1])
-      .find(p => p.path === slug);
+      .map((item) => item[1])
+      .find((p) => p.path === slug);
     if (oldPage && !isEqual(oldPage.context, context)) {
       deletePage(oldPage);
     }

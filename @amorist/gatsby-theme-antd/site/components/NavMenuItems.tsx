@@ -7,7 +7,7 @@ import ExternalLinkIcon from './ExternalLinkIcon';
 import styles from './Header.module.less';
 
 const getDocument = (navs: Nav[], slug = '') =>
-  navs.find(doc => doc.slug === slug) || {
+  navs.find((doc) => doc.slug === slug) || {
     title: {} as { [key: string]: string },
   };
 

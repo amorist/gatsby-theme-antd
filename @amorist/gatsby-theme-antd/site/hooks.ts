@@ -24,7 +24,7 @@ export const usePrevAndNext = () => {
       'aside .ant-menu-item-selected a',
     );
     const currentIndex = Array.from(menuNodes).findIndex(
-      node => node === currentMenuNode,
+      (node) => node === currentMenuNode,
     );
     const prevNode =
       currentIndex - 1 >= 0 ? menuNodes[currentIndex - 1] : undefined;

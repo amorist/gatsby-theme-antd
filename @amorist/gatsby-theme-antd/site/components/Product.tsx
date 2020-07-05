@@ -52,7 +52,7 @@ const Product: React.FC<ProductProps> = ({
       </a>
       <div className={styles.productDescription}>{description}</div>
       <div className={styles.productLinks}>
-        {links.slice(0, 2).map(item => (
+        {links.slice(0, 2).map((item) => (
           <a href={item.url} target={getTarget(item.url || '')} key={item.url}>
             {item.title}
           </a>

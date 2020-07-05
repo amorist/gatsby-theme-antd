@@ -133,7 +133,7 @@ const Swatch: FC<SwatchProps> = ({
               <Switch
                 checked={dark}
                 size="small"
-                onChange={checked => toggleDark(checked)}
+                onChange={(checked) => toggleDark(checked)}
               />
             </div>
           )}

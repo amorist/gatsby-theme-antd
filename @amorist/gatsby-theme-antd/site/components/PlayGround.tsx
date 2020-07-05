@@ -168,7 +168,7 @@ insertCss(`,
         }
         setError(null);
       }}
-      editorDidMount={instance => {
+      editorDidMount={(instance) => {
         cmInstance.current = instance;
       }}
     />

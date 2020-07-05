@@ -113,8 +113,8 @@ const Footer: React.FC<FooterProps> = ({
   };
 
   const defaultColumns = products
-    .filter(product => product.category !== 'ecology')
-    .map(product => ({
+    .filter((product) => product.category !== 'ecology')
+    .map((product) => ({
       title: (
         <span>
           {product.title}

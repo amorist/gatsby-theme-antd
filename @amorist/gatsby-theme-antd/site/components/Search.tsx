@@ -27,7 +27,7 @@ function initDocSearch({
     inputSelector: `.${styles.input}`,
     algoliaOptions: { facetFilters: [`tags:${lang}`] },
     transformData(hits: Array<{ url: string }>) {
-      hits.forEach(hit => {
+      hits.forEach((hit) => {
         /* eslint-disable no-param-reassign */
         hit.url = hit.url.replace('g2.antv.vision', window.location.host);
         hit.url = hit.url.replace('g6.antv.vision', window.location.host);

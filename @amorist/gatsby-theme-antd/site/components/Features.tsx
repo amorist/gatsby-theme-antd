@@ -26,7 +26,7 @@ const Features: React.FC<FeaturesProps> = ({
   id,
 }) => {
   const getCards = () => {
-    const children = features.map(card => (
+    const children = features.map((card) => (
       <Col className={styles.cardWrapper} key={card.title} md={8} xs={24}>
         <FeatureCard {...card} />
       </Col>

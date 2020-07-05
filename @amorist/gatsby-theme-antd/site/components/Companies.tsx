@@ -21,7 +21,7 @@ const Companies: React.FC<CompaniesProps> = ({
   className,
   style,
 }) => {
-  const getCompanies = companies.map(company => (
+  const getCompanies = companies.map((company) => (
     <Col key={company.name} className={styles.company} md={6} sm={8} xs={12}>
       <img className={styles.companyimg} src={company.img} alt={company.name} />
     </Col>

@@ -2,4 +2,4 @@
 package.json
 package-lock.json
 public
-gatsby-theme-antd/lib
+@amorist/gatsby-theme-antd/lib

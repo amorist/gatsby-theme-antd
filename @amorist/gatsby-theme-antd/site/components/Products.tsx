@@ -38,8 +38,8 @@ const Products: React.FC<ProductsProps> = ({
           <h3>{t('基础产品')}</h3>
           <ul>
             {data
-              .filter(item => item.category === 'basic')
-              .map(product => (
+              .filter((item) => item.category === 'basic')
+              .map((product) => (
                 <Product
                   key={product.title}
                   name={product.title}
@@ -55,8 +55,8 @@ const Products: React.FC<ProductsProps> = ({
           <h3>{t('拓展产品')}</h3>
           <ul>
             {data
-              .filter(item => item.category === 'extension')
-              .map(product => (
+              .filter((item) => item.category === 'extension')
+              .map((product) => (
                 <Product
                   key={product.title}
                   name={product.title}
@@ -72,8 +72,8 @@ const Products: React.FC<ProductsProps> = ({
           <h3>{t('周边生态')}</h3>
           <ul>
             {data
-              .filter(item => item.category === 'ecology')
-              .map(product => (
+              .filter((item) => item.category === 'ecology')
+              .map((product) => (
                 <Product
                   key={product.title}
                   name={product.title}

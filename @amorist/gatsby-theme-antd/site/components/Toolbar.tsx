@@ -76,7 +76,7 @@ const Toolbar: React.FC<ToolbarProps> = ({
 
   // 使用 playground.dependencies 定义的版本号
   const dependencies = playground.dependencies || {};
-  Object.keys(dependencies).forEach(name => {
+  Object.keys(dependencies).forEach((name) => {
     deps[name] = dependencies[name];
   });
 
@@ -171,7 +171,7 @@ const Toolbar: React.FC<ToolbarProps> = ({
 
   const [riddleVisible, updateRiddleVisible] = useState(false);
   useEffect(() => {
-    ping(status => {
+    ping((status) => {
       updateRiddleVisible(status === 'responded');
     });
   }, []);

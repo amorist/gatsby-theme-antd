@@ -1,4 +1,4 @@
-gatsby-theme-antd/site/**/*.js
-gatsby-theme-antd/lib
+@amorist/gatsby-theme-antd/site/**/*.js
+@amorist/gatsby-theme-antd/lib
 example/examples
 node_modules

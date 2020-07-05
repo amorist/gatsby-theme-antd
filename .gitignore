@@ -69,7 +69,7 @@ yarn-error.log
 .yarn-integrity
 
 .tmp
-gatsby-theme-antd/lib
+@amorist/gatsby-theme-antd/lib
 
 
 package-lock.json

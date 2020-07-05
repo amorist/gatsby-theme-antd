@@ -3,7 +3,7 @@ const { version, repository, homepage } = require('./package.json');
 module.exports = {
   plugins: [
     {
-      resolve: 'gatsby-theme-antd',
+      resolve: '@amorist/gatsby-theme-antd',
       options: {},
     },
   ],
@@ -56,14 +56,14 @@ module.exports = {
             icon: '',
             title: '产品首页',
             url: '',
-            openExternal: true
+            openExternal: true,
           },
           {
             icon: '',
             title: '图表示例',
             url: '',
-            openExternal: true
-          }
+            openExternal: true,
+          },
         ],
       },
       {
@@ -73,14 +73,14 @@ module.exports = {
             icon: '',
             title: '产品首页',
             url: '',
-            openExternal: true
+            openExternal: true,
           },
           {
             icon: '',
             title: '图表示例',
             url: '',
-            openExternal: true
-          }
+            openExternal: true,
+          },
         ],
       },
     ],

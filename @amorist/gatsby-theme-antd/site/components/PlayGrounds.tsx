@@ -27,7 +27,7 @@ const PlayGrounds: React.FC<PlayGroundsProps> = ({
   useEffect(() => {
     const defaultExample =
       examples.find(
-        item => `#${item.filename.split('.')[0]}` === location.hash,
+        (item) => `#${item.filename.split('.')[0]}` === location.hash,
       ) || examples[0];
     updateCurrentExample(defaultExample);
   }, []);
@@ -106,7 +106,7 @@ const PlayGrounds: React.FC<PlayGroundsProps> = ({
           ref={playgroundScrollDiv}
           onScroll={onScroll}
         >
-          {examples.map(example => {
+          {examples.map((example) => {
             const title =
               typeof example.title === 'object'
                 ? example.title[i18n.language]

@@ -1,7 +1,7 @@
 {
-  "name": "gatsby-theme-antd",
+  "name": "@amorist/gatsby-theme-antd",
   "description": "Gatsby theme antd",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "author": "amorist <amor90s.zhang@gmail.com>",
   "keywords": [
     "gatsby",
@@ -116,7 +116,7 @@
     "start": "npm run develop",
     "serve": "gatsby serve",
     "release": "release-it --ci",
-    "copy:components": "mkdir -p lib && cp -R .tmp/gatsby-theme-antd/site/components lib && cp site/components/*.less ./lib/components && cp site/common.json ./lib && cp -R site/images ./lib",
+    "copy:components": "mkdir -p lib && cp -R .tmp/@amorist/gatsby-theme-antd/site/components lib && cp site/components/*.less ./lib/components && cp site/common.json ./lib && cp -R site/images ./lib",
     "compile:components": "rm -rf .tmp lib && ../../node_modules/.bin/tsc --outDir .tmp --noEmit false -d && npm run copy:components",
     "test": "jest"
   },
