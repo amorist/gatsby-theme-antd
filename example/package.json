@@ -1,0 +1,29 @@
+{
+  "private": true,
+  "name": "example",
+  "version": "1.0.0",
+  "license": "MIT",
+  "homepage": "https://test.antv.vision",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/antvis/gatsby-theme-antv/tree/master/example"
+  },
+  "bugs": {
+    "url": "https://github.com/antvis/antvis.github.io/issues"
+  },
+  "scripts": {
+    "build": "npm run clean && gatsby build --prefix-paths --no-uglify",
+    "develop": "npm run clean && gatsby develop -H 0.0.0.0",
+    "clean": "gatsby clean"
+  },
+  "dependencies": {
+    "@antv/g2": "^4.0.7",
+    "gatsby-theme-antd": "*",
+    "@types/react": "^16.9.35",
+    "@types/react-dom": "^16.9.8",
+    "gatsby": "^2.21.33",
+    "ptz-i18n": "^1.0.0",
+    "react": "^16.10.2",
+    "react-dom": "^16.10.2"
+  }
+}

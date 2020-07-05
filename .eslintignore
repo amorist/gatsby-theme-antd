@@ -1,0 +1,4 @@
+gatsby-theme-antd/site/**/*.js
+gatsby-theme-antd/lib
+example/examples
+node_modules
