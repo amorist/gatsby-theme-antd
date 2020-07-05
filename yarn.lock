@@ -165,104 +165,6 @@
     "@antv/util" "~2.0.5"
     tslib "^2.0.0"
 
-"@antv/gatsby-theme-antv@*":
-  version "0.10.66"
-  resolved "https://registry.npm.taobao.org/@antv/gatsby-theme-antv/download/@antv/gatsby-theme-antv-0.10.66.tgz#2ba82926ade52b94a2ee9617c27bb2965bd2921c"
-  integrity sha1-K6gpJq3lK5Si7pYXwnuyllvSkhw=
-  dependencies:
-    "@ant-design/icons" "^4.1.0"
-    "@babel/plugin-transform-modules-umd" "^7.2.0"
-    "@babel/preset-env" "^7.9.6"
-    "@babel/preset-react" "^7.6.3"
-    "@babel/preset-typescript" "^7.6.0"
-    "@babel/standalone" "^7.6.4"
-    "@hot-loader/react-dom" "^16.9.0+4.12.11"
-    "@rstacruz/gatsby-remark-component" "^2.0.0"
-    "@stackblitz/sdk" "^1.3.0"
-    "@types/classnames" "^2.2.9"
-    "@types/codemirror" latest
-    "@types/git-url-parse" "^9.0.0"
-    "@types/jest" "^26.0.0"
-    "@types/lodash-es" "^4.17.3"
-    "@types/parse-github-url" "^1.0.0"
-    "@types/react" "^16.9.35"
-    "@types/react-dom" "^16.9.8"
-    "@types/react-github-button" "^0.1.0"
-    "@types/react-helmet" "^6.0.0"
-    "@types/react-slick" "^0.23.4"
-    "@types/rehype-react" "^4.0.0"
-    "@types/shallowequal" "^1.1.1"
-    antd "^4.2.2"
-    babel-preset-gatsby "^0.4.1"
-    classnames "^2.2.6"
-    codemirror "^5.49.2"
-    codesandbox "^2.1.10"
-    docsearch.js "^2.6.3"
-    gatsby "^2.21.33"
-    gatsby-image "^2.4.3"
-    gatsby-plugin-antd "^2.0.2"
-    gatsby-plugin-catch-links "^2.3.1"
-    gatsby-plugin-cname "^1.0.0"
-    gatsby-plugin-copy-files "^1.0.3"
-    gatsby-plugin-google-analytics "^2.3.1"
-    gatsby-plugin-i18n "^1.0.1"
-    gatsby-plugin-layout "^1.3.1"
-    gatsby-plugin-less "^3.2.1"
-    gatsby-plugin-manifest "^2.4.2"
-    gatsby-plugin-meta-redirect "^1.1.1"
-    gatsby-plugin-nprogress "^2.3.1"
-    gatsby-plugin-offline "^3.2.2"
-    gatsby-plugin-page-creator "^2.3.1"
-    gatsby-plugin-react-helmet "^3.3.1"
-    gatsby-plugin-react-svg "^3.0.0"
-    gatsby-plugin-remove-serviceworker "^1.0.0"
-    gatsby-plugin-remove-trailing-slashes "^2.3.2"
-    gatsby-plugin-sitemap "^2.4.2"
-    gatsby-plugin-typescript "^2.4.2"
-    gatsby-redirect-from "^0.2.1"
-    gatsby-remark-autolink-headers "^2.3.2"
-    gatsby-remark-external-links "^0.0.4"
-    gatsby-remark-prismjs "^3.5.1"
-    gatsby-remark-reading-time "^1.0.1"
-    gatsby-source-filesystem "^2.3.3"
-    gatsby-source-github "^0.0.2"
-    gatsby-transformer-remark "^2.8.8"
-    git-url-parse "^11.1.2"
-    i18next "^19.4.4"
-    indent-string "^4.0.0"
-    insert-css "^2.0.0"
-    less "^3.10.3"
-    lodash "^4.17.15"
-    lodash-es "^4.17.15"
-    matchmedia-polyfill "^0.3.2"
-    mkdirp "^1.0.3"
-    normalize.css "^8.0.1"
-    parse-github-url "^1.0.2"
-    prettier "^2.0.5"
-    pretty-quick "^2.0.0"
-    prism-themes "^1.2.0"
-    prismjs "^1.17.1"
-    ptz-i18n "^1.0.0"
-    rc-drawer "^4.0.0"
-    rc-footer "^0.6.1"
-    react "^16.9.0"
-    react-codemirror2 "^7.0.0"
-    react-dom "^16.9.0"
-    react-github-button "^0.1.11"
-    react-helmet "^6.0.0"
-    react-i18next "^11.4.0"
-    react-slick "^0.26.1"
-    react-split-pane "^0.1.87"
-    react-test-renderer "^16.9.0"
-    react-use "^15.0.0"
-    rehype-react "^6.0.0"
-    release-it "^13.5.8"
-    shallowequal "^1.1.0"
-    slash "^3.0.0"
-    slick-carousel "^1.8.1"
-    typescript "^3.9.2"
-    video-react "^0.14.1"
-
 "@antv/matrix-util@^3.1.0-beta.1", "@antv/matrix-util@^3.1.0-beta.2":
   version "3.1.0-beta.2"
   resolved "https://registry.npmjs.org/@antv/matrix-util/-/matrix-util-3.1.0-beta.2.tgz#b4afafb70dbdf52affca308d3546c8a090fd23ca"
@@ -5214,7 +5116,7 @@ command-exists@^1.2.4:
   resolved "https://registry.npmjs.org/command-exists/-/command-exists-1.2.9.tgz#c50725af3808c8ab0260fd60b01fbfa25b954f69"
   integrity sha512-LTQ/SGc+s0Xc0Fu5WaKnR0YiygZkm9eKFvyS+fRsU7/ZWFF8ykFM6Pc9aCVf1+xasOOZpO3BAVgVrKvsqKHV7w==
 
-commander@^2.11.0, commander@^2.18.0, commander@^2.20.0, commander@^2.9.0:
+commander@^2.11.0, commander@^2.18.0, commander@^2.20.0, commander@^2.20.3, commander@^2.9.0:
   version "2.20.3"
   resolved "https://registry.npmjs.org/commander/-/commander-2.20.3.tgz#fd485e84c03eb4881c20722ba48035e8531aeb33"
   integrity sha512-GpVkmM8vF2vQUkj2LvZmD35JxeJOLCwJ9cUkugyk2nuhbv3+mJvpLYYt+0+USMxE+oj+ey/lJEnhZw75x/OMcQ==
@@ -5751,6 +5653,11 @@ cssesc@^3.0.0:
   version "3.0.0"
   resolved "https://registry.npmjs.org/cssesc/-/cssesc-3.0.0.tgz#37741919903b868565e1c09ea747445cd18983ee"
   integrity sha512-/Tb/JcjK111nNScGob5MNtsntNM1aCNUDipB/TkwZFhyDrrE47SOx/18wF2bbjgc3ZzCSKW1T5nt5EbFoAz/Vg==
+
+cssfilter@0.0.10:
+  version "0.0.10"
+  resolved "https://registry.yarnpkg.com/cssfilter/-/cssfilter-0.0.10.tgz#c6d2672632a2e5c83e013e6864a42ce8defd20ae"
+  integrity sha1-xtJnJjKi5cg+AT5oZKQs6N79IK4=
 
 cssnano-preset-default@^4.0.7:
   version "4.0.7"
@@ -9010,9 +8917,11 @@ graphql-import@^0.7.1:
     resolve-from "^4.0.0"
 
 graphql-playground-html@^1.6.19:
-  version "1.6.20"
-  resolved "https://registry.npmjs.org/graphql-playground-html/-/graphql-playground-html-1.6.20.tgz#53a6a497ae3252cd1a7d1e96867fd02538c6e6df"
-  integrity sha512-RkC18un0a1YEm0PoTMGgFQh7kIA6mtp3dUun+6coWtuMLczoNNij6V0DPHEj5kWi8u0qIrSKgSx5kh4pxcCX6g==
+  version "1.6.25"
+  resolved "https://registry.yarnpkg.com/graphql-playground-html/-/graphql-playground-html-1.6.25.tgz#2d8fa250cec4036a4f5b7f8ad069c86d6d64c95f"
+  integrity sha512-wMNvGsQ0OwBVhn72VVi7OdpI85IxiIZT43glRx7gQIwQ6NvhFnzMYBIVmcJAJ4UlXRYiWtrQhuOItDXObiR3kg==
+  dependencies:
+    xss "^1.0.6"
 
 graphql-playground-middleware-express@^1.7.14:
   version "1.7.15"
@@ -19068,6 +18977,14 @@ xregexp@^4.3.0:
   integrity sha512-7jXDIFXh5yJ/orPn4SXjuVrWWoi4Cr8jfV1eHv9CixKSbU+jY4mxfrBwAuDvupPNKpMUY+FeIqsVw/JLT9+B8g==
   dependencies:
     "@babel/runtime-corejs3" "^7.8.3"
+
+xss@^1.0.6:
+  version "1.0.7"
+  resolved "https://registry.yarnpkg.com/xss/-/xss-1.0.7.tgz#a554cbd5e909324bd6893fb47fff441ad54e2a95"
+  integrity sha512-A9v7tblGvxu8TWXQC9rlpW96a+LN1lyw6wyhpTmmGW+FwRMactchBR3ROKSi33UPCUcUHSu8s9YP6F+K3Mw//w==
+  dependencies:
+    commander "^2.20.3"
+    cssfilter "0.0.10"
 
 xstate@^4.9.1:
   version "4.10.0"
