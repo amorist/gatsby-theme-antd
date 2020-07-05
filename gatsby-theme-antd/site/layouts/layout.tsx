@@ -115,7 +115,7 @@ const Layout: React.FC<LayoutProps> = ({ children, location }) => {
   } catch (e) {
     // empty
   }
-  console.log(columns)
+
   const pathPrefix = withPrefix('/').replace(/\/$/, '');
   const path = location.pathname.replace(pathPrefix, '');
   const currentLangKey = getCurrentLangKey(lngs, 'zh', path);
