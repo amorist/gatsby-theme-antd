@@ -79,7 +79,7 @@
     "insert-css": "^2.0.0",
     "less": "^3.10.3",
     "lodash": "^4.17.15",
-    "lodash-es": "^4.17.15",
+    "lodash-es": "^4.17.21",
     "matchmedia-polyfill": "^0.3.2",
     "mkdirp": "^1.0.3",
     "normalize.css": "^8.0.1",
